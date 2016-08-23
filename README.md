@@ -4,4 +4,4 @@
 4. layout głównego widoku + biblioteki
 5. grid+responsywne klikalne kafelki (widgety, routing)
 6. menu (routing)
-7. info o środowisku (dev, qa, prod) +jako kto jestem zalogowany
+7. info o środowisku (dev, qa, prod) +jako kot jestem zalogowany
