@@ -17,6 +17,7 @@ gulp.task('watch', function() {
   gulp.watch('app/', ['js']);
 });
 
+//join serve && dev
 gulp.task('dev', function(cb) {
 
   runSequence(['watch'], cb);
