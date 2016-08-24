@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server.js",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "dev": "dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "devDependencies": {
     "express": "^4.14.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "run-sequence": "^1.2.2"
   }
 }
