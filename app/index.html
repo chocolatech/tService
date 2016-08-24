@@ -1,14 +1,43 @@
 <html>
 
 <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
 </head>
 
 <body ng-app="app">
-    <div>Hello {{2+2}}</div>
-    <div>Hello {{5+2}}</div>
+    <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak>
+        <section layout="row" flex>
+            <md-content flex layout-padding>
+                <div layout="column" layout-align="top center">
+                    <p>
+                        The left sidenav will 'lock open' on a medium (>=960px wide) device.
+                    </p>
+                    <p>
+                        The right sidenav will focus on a specific child element.
+                    </p>
+                    <div>
+                        <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary">
+                            Toggle right
+                        </md-button>
+                    </div>
+                </div>
+                <div flex></div>
+            </md-content>
+            <menu></menu>
+        </section>
+    </div>
+
 
     <script src="node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-aria/angular-aria.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="/node_modules/angular-material/angular-material.js"></script>
     <script src="app.module.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="menu/menu.module.js"></script>
+    <script src="menu/menu.component.js"></script>
+
 </body>
 
 </html>
