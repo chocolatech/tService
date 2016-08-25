@@ -6,7 +6,7 @@
 </head>
 
 <body ng-app="app">
-    <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak>
+    <div ng-controller="AppCtrl as ctrl" layout="column" style="height:500px;" ng-cloak>
         <section layout="row" flex>
             <md-content flex layout-padding>
                 <div layout="column" layout-align="top center">
@@ -17,7 +17,7 @@
                         The right sidenav will focus on a specific child element.
                     </p>
                     <div>
-                        <md-button ng-click="$ctrl.toggleRight()" ng-hide="$ctrl.isOpenRight()" class="md-primary">
+                        <md-button ng-click="ctrl.toggleRight()" ng-hide="ctrl.isOpenRight()" class="md-primary">
                             Toggle right
                         </md-button>
                     </div>
