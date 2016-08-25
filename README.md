@@ -5,3 +5,8 @@
 5. grid+responsywne klikalne kafelki (widgety, routing)
 6. menu (routing)
 7. info o środowisku (dev, qa, prod) +jako kot jestem zalogowany
+
+###############################
+myWishlist:
+1. Gulp: real livereload, auto open browser
+2. Material: why not seeing attribute in comoponent (scope?)
